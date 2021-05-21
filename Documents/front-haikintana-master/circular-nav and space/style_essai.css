@@ -1,0 +1,338 @@
+/*$bg-logo: rgb(0, 0, 43);
+$clr-tlscp: rgb(145, 145, 145);
+
+$scale: 20;
+$marge: 2px;
+$border-size: $marge;
+$border: $marge;
+
+$w: 6.4px*$scale - $marge;
+$h: 11.2px*$scale - $marge;
+
+$h-v: 1.6px*$scale - $marge;
+$pos-v-y: 5.1px*$scale - $marge;
+$pos-v-x: 0.8px*$scale - $marge;
+
+$w-v1: 2.2px*$scale - $marge;
+$w-v1a: 80%;
+$w-v1b: 20%;
+$h-v1: 1.1px*$scale - $marge;
+$space-top-v1: 0.2px*$scale;
+
+$w-v2: 1.2px*$scale - $marge;
+$h-v2: 1.6px*$scale - $marge;
+
+$w-v3: 3.4px*$scale - $marge;
+$h-v3: 1.1px*$scale - $marge;
+
+$w-pd: 0.4px*$scale - $marge;
+$h-pd: 0.4px*$scale - $marge;
+$pos-pd1-x: 3px*$scale - $marge;
+$pos-pd1-y: (6px - 1.6px)*$scale - $marge;
+$pos-pd2-x: 3.6px*$scale - $marge;
+$pos-pd2-y: (6px - 2px)*$scale - $marge*2;
+
+$w-ps: 0.2px*$scale - $marge;
+$h-ps: 1px*$scale - $marge;
+$pos-ps-y: (5.4px - 2.4px)*$scale - $marge*3;
+$pos-ps-x: 3.4px*$scale - $marge; 
+
+$w-r: 1px*$scale - $marge;
+$h-r: 0.8px*$scale - $marge;
+$pos-r-x: 3px*$scale - $marge;
+$pos-r-y: (4.6px - 3.4px)*$scale - $marge;
+
+$w-pt: 0.2px*$scale - $marge;
+
+$h-pt1: 3.6px*$scale;
+$pos-pt1-x: 3.2px*$scale - $marge;
+$pos-pt1-y: (6.4px - 4.2px)*$scale - $marge*5;
+
+$h-pt2: 2.8px*$scale;
+$pos-pt2-x: 3.4px*$scale - $marge;
+$pos-pt2-y: (6.4px - 7.8px)*$scale - $marge*7;
+
+$h-pt3: $h-pt1;
+$pos-pt3-x: 3.6px*$scale - $marge;
+$pos-pt3-y: (6.4px - 10.6px)*$scale - $marge*9;
+
+.logo{
+    width: $w;
+    height: $h;
+    background-color: $bg-logo;
+    position: relative;
+}
+
+.V{
+    display: flex;
+    background-color: $bg-logo;
+    width: $w-v1+$w-v2+$w-v3;
+    height: $h-v;
+    transform: translateY($pos-v-y) translateX($pos-v-x) rotate(-45deg);
+    transform-origin: 0% 85%;
+}
+
+.v1{
+    display: flex;
+    margin-top: $space-top-v1;
+    width: $w-v1;
+    height: $h-v1;
+    background-color:$clr-tlscp;
+    border: $border-size solid;
+    &a{
+        width: $w-v1a;
+        height: $h-v1;
+        background-color: $clr-tlscp;
+    }
+    &b{
+        width: $w-v1b;
+        height: $h-v1;
+        background-color: $clr-tlscp;
+        border-right: $border solid;
+    }
+}
+
+.v2{
+    width: $w-v2;
+    height: $h-v2;
+    background-color: $clr-tlscp;
+    border: $border-size solid;
+}
+
+.v3{
+    margin-top: $space-top-v1;
+    width: $w-v3;
+    height: $h-v3;
+    background-color: $clr-tlscp;
+    border: $border-size solid;
+    &a{
+        width: 80%;
+        height: $h-v3;
+        background-color: $clr-tlscp;
+        border-right: $border solid;
+    }
+}
+
+.R{
+    width: $w-r;
+    height: $h-r;
+    background-color: $clr-tlscp;
+    border: $border-size solid;
+    transform: translate($pos-r-x,$pos-r-y);
+}
+
+.PS{
+    width: $w-ps;
+    height: $h-ps;
+    border: $border-size solid;
+    background-color: $clr-tlscp;
+    transform: translate($pos-ps-x,$pos-ps-y);
+}
+
+.PD1{
+    width: $w-pd;
+    height: $h-pd;
+    border: $border-size solid;
+    background-color: $clr-tlscp;
+    transform: translate($pos-pd1-x,$pos-pd1-y);
+}
+
+.PD2{
+    width: $w-pd;
+    height: $h-pd;
+    border: $border-size solid;
+    background-color: $clr-tlscp;
+    transform: translate($pos-pd2-x,$pos-pd2-y);
+}
+
+.PT1{
+    width: $w-pt;
+    height: $h-pt1;
+    background-color: $clr-tlscp;
+    border: $border-size solid;
+    transform: translate($pos-pt1-x,$pos-pt1-y) rotate(20deg);
+    transform-origin: 50% 0%;
+}
+.PT2{
+    width: $w-pt;
+    height: $h-pt2;
+    background-color: $clr-tlscp;
+    border: $border-size solid;
+    transform: translate($pos-pt2-x,$pos-pt2-y);
+}
+.PT3{
+    width: $w-pt;
+    height: $h-pt1;
+    background-color: $clr-tlscp;
+    border: $border-size solid;
+    transform: translate($pos-pt3-x,$pos-pt3-y) rotate(-20deg);
+    transform-origin: 50% 0%;
+}*/
+/*/////////////////////////////////////////*/
+/*/////////////////////////////////////////*/
+/*///////////////////////////////////*/
+/*/////////////////////////////////////////*/
+/*/////////////////////////////////////////*/
+.corps {
+  position: relative;
+  background-color: #00006b;
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+  overflow: hidden;
+  /*&:hover{
+      & .tete{
+          animation: mouvement-tete 1s alternate;
+          & .a-vitre{
+              animation: mouvement-a-vitre 1s alternate;
+          }
+      }
+  }*/ }
+  .corps .sac {
+    position: absolute;
+    background-color: #646363;
+    width: 147.65625px;
+    height: 147.65625px;
+    border-radius: 10% 10% 0% 0%;
+    transform: translate(51.17188px, 142.5px); }
+  .corps .tete {
+    position: absolute;
+    z-index: 1;
+    width: 150px;
+    height: 120px;
+    overflow: hidden;
+    position: absolute;
+    cursor: pointer;
+    transform: translate(50px, 37.5px); }
+    .corps .tete > div {
+      position: absolute; }
+    .corps .tete .casque1 {
+      background-color: #a8a5a5;
+      width: 120px;
+      height: 120px;
+      border-radius: 80% 80% 70% 70%;
+      transform: translate(20px, 0px);
+      overflow: hidden;
+      /*border-top: $border solid;*/ }
+      .corps .tete .casque1 .casque2 {
+        background-color: #837f7f;
+        width: 60px;
+        height: 120px;
+        transform: translate(60px, 0px);
+        /*border-top: $border solid;*/ }
+    .corps .tete .oreille1 {
+      background-color: #252525;
+      width: 15px;
+      height: 40px;
+      border-radius: 100% 0% 0% 100%;
+      /*border-left: $border solid;*/
+      transform: translate(10px, 50px); }
+    .corps .tete .oreille2 {
+      background-color: #252525;
+      width: 15px;
+      height: 40px;
+      border-radius: 0% 100% 100% 0%;
+      /*border-left: $border solid;*/
+      transform: translate(135px, 50px); }
+    .corps .tete .a-vitre {
+      position: relative;
+      background-color: #5e5d5d;
+      width: 100px;
+      height: 90px;
+      border-radius: 50% 50% 40% 40%;
+      transform: translate(30px, 20px); }
+      .corps .tete .a-vitre > div {
+        position: absolute; }
+      .corps .tete .a-vitre .mini-oreille1 {
+        background-color: #a8a5a5;
+        width: 10px;
+        height: 20px;
+        transform: translate(0px, 45px); }
+      .corps .tete .a-vitre .mini-oreille2 {
+        background-color: #837f7f;
+        width: 10px;
+        height: 20px;
+        transform: translate(90px, 45px); }
+      .corps .tete .a-vitre .vitre {
+        background: linear-gradient(to right, #5e5e5e, black);
+        width: 90px;
+        height: 80px;
+        border-radius: 50% 50% 40% 40%;
+        overflow: hidden;
+        transform: translate(5px, 5px); }
+      .corps .tete .a-vitre .triangle1 {
+        background-color: #a8a5a5;
+        width: 10px;
+        height: 10px;
+        transform: translate(33.33333px, 81px); }
+      .corps .tete .a-vitre .triangle2 {
+        background-color: #837f7f;
+        width: 10px;
+        height: 10px;
+        transform: translate(56.66667px, 81px); }
+  .corps .tronc {
+    transform: translate(40.625px, 162.5px);
+    background-color: #a8a5a5;
+    position: relative;
+    width: 168.75px;
+    height: 168.75px;
+    border-radius: 30% 30% 0% 0%;
+    overflow: hidden; }
+    .corps .tronc > div {
+      position: absolute; }
+    .corps .tronc .poitrine {
+      background: #837f7f;
+      width: 84.375px;
+      height: 168.75px;
+      transform: translate(84.375px, 0px); }
+    .corps .tronc .boite {
+      position: relative;
+      background-color: #646363;
+      width: 84.375px;
+      height: 56.25px;
+      border-radius: 10% 10% 10% 10%;
+      transform: translate(42.1875px, 21.09375px); }
+      .corps .tronc .boite > div {
+        position: absolute; }
+      .corps .tronc .boite .ecran {
+        background-color: #a8a5a5;
+        width: 42.1875px;
+        height: 28.125px;
+        transform: translate(28.125px, 9.375px); }
+      .corps .tronc .boite .boutton1 {
+        background-color: #a8a5a5;
+        width: 10px;
+        height: 10px;
+        border-radius: 50%;
+        transform: translate(10.54688px, 9.375px); }
+      .corps .tronc .boite .boutton2 {
+        background-color: #a8a5a5;
+        width: 10px;
+        height: 10px;
+        border-radius: 50%;
+        transform: translate(10.54688px, 29.375px); }
+
+.input-text {
+  cursor: pointer;
+  font-size: 20px; }
+
+.input-text {
+  margin-left: 45px; }
+
+@keyframes mouvement-tete {
+  0% {
+    transform: translate(50px, 37.5px); }
+  50% {
+    transform: translate(50px, 42.5px); }
+  100% {
+    transform: translate(45px, 42.5px); } }
+@keyframes mouvement-a-vitre {
+  0% {
+    transform: translate(30px, 20px); }
+  50% {
+    transform: translate(30px, 25px); }
+  100% {
+    transform: translate(25px, 25px); } }
+/*////////////////////////////////////////////////*/
+
+/*# sourceMappingURL=style_essai.css.map */

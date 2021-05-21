@@ -1,0 +1,22 @@
+<div>
+    <label>Theme: </label>{{ activite.theme}}
+</div>
+<div>
+    <label>Date: </label>{{ activite.date}}
+</div>
+<div>
+    <label>Categorie: </label>
+    <categorie-details [id]="activite.categorie"></categorie-details>
+</div>
+<div>
+    <label>Description: </label>
+    <div *ngFor="let idPhoto of activite.photos">
+        <photo-details [id]="idPhoto"></photo-details>
+    </div>
+</div>
+<div>
+    <label>Description: </label>
+    <div *ngFor="let idDescription of activite.descriptions">
+        <description-details [id]="idDescription"></description-details>
+    </div>
+</div>

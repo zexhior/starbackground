@@ -1,0 +1,54 @@
+<div *ngIf="membre">
+    <div>
+        <label>Name: </label> {{membre.nom}}
+    </div>
+    <div>
+        <label>First Name: </label> {{membre.prenom}}
+    </div>
+    <div>
+        <label>Adresse: </label> {{membre.adr_phys}}
+    </div>
+    <div>
+        <label>Date addesion: </label> {{membre.date_add}}
+    </div>
+    <div>
+        <label>Cotisation: </label> {{membre.cotisation}}
+    </div>
+    <div>
+        <label>Nombre paiement: </label> {{membre.nbr_paiement}}
+    </div>
+    <div>
+        <label>Linkedin: </label> {{membre.linkedin}}
+    </div>
+    <div>
+        <label>Statut: </label> {{membre.statut}}
+    </div>
+    <div>
+        <label>Photo: </label>{{membre.photo}}
+        <img [title]="urlImage" [src]="urlImage"/>
+    </div>
+    <div>
+        <label>Numero: </label>
+        <ul>
+            <div *ngFor="let idnum of membre.nummembre">
+                <numero-details [id]="idnum"></numero-details>
+            </div>
+        </ul>
+    </div>
+    <div>
+        <label>Fb: </label>
+        <ul>
+            <div *ngFor="let idcompte of membre.fbmembre">
+                <fb-details [id]="idcompte"></fb-details>
+            </div>
+        </ul>
+    </div>
+    <div>
+        <label>Mail: </label>
+        <ul>
+            <div *ngFor="let idmail of membre.mailmembre">
+                <mail-details [id]="idmail"></mail-details>
+            </div>
+        </ul>
+    </div>
+</div>

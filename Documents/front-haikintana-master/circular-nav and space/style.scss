@@ -1,0 +1,277 @@
+$cd-btn: #011c37;
+$cd-txt: #6300a0;
+$cd-box: #011c37;
+$cd-primary: #011c37;
+$ball-size: 50px;
+$forcemetre-height:400px;
+$cd-secondary: #a21e37;
+
+/*.btn{
+    margin: 0 auto;
+    width: 400px;
+    font-size: 3rem;
+    cursor: pointer;
+    padding: 1.85rem 3rem;
+    border: 5px solid $cd-primary;
+    border-radius: 100px;
+    color: $cd-txt;
+    font-family: sans-serif;
+    background: white;
+    transition: transform 500ms;
+    transition-delay: 0ms,100ms;
+    &:active{
+    & + .progress{
+        & > .progress__bar{
+                transform: scaleX(1);
+                animation-name: progress-bar;
+                animation-duration: 1000ms;
+            }
+        }
+    }
+}*/
+
+
+/*.btn {
+    width: 400px;
+    background: $cd-primary;
+    font-size: 3rem;
+    cursor: pointer;
+    padding: 1.85rem 3rem;
+    border-radius: 30px;
+    color: $cd-txt;
+    font-family: sans-serif;
+    &:hover + .forcemetre +.ball{
+        transform: translateY(-350px);
+        transition-timing-function: cubic-bezier(0,.75,.08,1);
+    }
+}
+
+.ball {
+    width: $ball-size;
+    height: $ball-size;
+    background: $cd-secondary;
+    margin-bottom: 1rem;
+    border-radius: $ball-size * 0.5;
+    transition: transform 500ms;
+    transition-timing-function: cubic-bezier(0,.75,.08,1);
+}
+
+.forcemetre{
+    background-color: yellow;
+    border-radius: $ball-size;
+    width: $ball-size;
+    height: $forcemetre-height;
+    margin-bottom: -$ball-size;
+}*/
+
+/*$cd-txt--invalid: #fff;
+$cd-danger: #b20a37;
+.form {
+    &__group {
+        & input {
+            border: 2px solid $cd-box;
+            border-radius: 100rem;
+            color: $cd-txt;
+            font-family: 'Montserrat', sans-serif;
+            font-size: 2.5rem;
+            outline: none;
+            padding: .5rem 1.5rem;
+            width: 500px;
+            transition: background-color 400ms;
+            &:focus {
+                border: 2px solid $cd-txt;
+            }
+            &:not(:focus):invalid {
+                background: $cd-danger;
+                border: 2px solid $cd-danger;
+                color: $cd-txt--invalid;
+                animation: headshake 100ms cubic-bezier(.4,.1,.6,.9);
+                animation-iteration-count: 3;
+            }
+        }
+    }
+}
+$shake-intensity: 2%;
+@keyframes headshake{
+    25%{
+        transform: translateX($shake-intensity);
+    }
+    75%{
+        transform: translateX-(-$shake-intensity);
+    }
+}*/
+
+/*.progress{
+    margin-top: 10px;
+    border: 3px solid $cd-primary;
+    height: $ball-size;
+    &__bar{
+        opacity: 0;
+        width: 100%;
+        height: $ball-size;
+        background-color: $cd-txt;
+        transform: scaleX(0);
+        transition: transform 1000ms ease-in-out;
+        transform-origin: left;
+        transition-timing-function: cubic-bezier(.32,0,.07,1);
+    }
+}*/
+
+/*.progress{
+    margin-top: 10px;
+    border: 3px solid $cd-primary;
+    height: $ball-size;
+    &__bar{
+        width: 100%;
+        height: $ball-size;
+        background-color: $cd-txt;
+        transform-origin: left;
+        transform: scaleX(.5);
+        animation: progress-bar 1000ms 100ms both;
+    }
+}
+
+@keyframes progress-bar{
+    0%{
+        transform: scaleX(0);
+    }
+    17%{
+        transform: scaleX(.18);
+    }
+    24%{
+        transform: scaleX(.4);
+    }
+    46%{
+        transform: scaleX(.81);
+    }
+    100%{
+        transform: scaleX(1);
+        opacity: 1;
+    }
+}
+
+.cat{
+    position: absolute;
+    z-index: 1;
+    animation: cat 0ms 1300ms both;
+}
+
+@keyframes cat{
+    0%{
+        transform: translateX(-9999px);
+    }
+    100%{
+        transform: translateX(0);
+    }
+}*/
+
+
+/*.btn{
+    perspective: 500px;
+    &:active{
+        & > .btn__flip{
+            transform: rotateX(-90deg);
+        }
+    }
+    &__flip{
+        height: 200px;
+        transform-style: preserve-3d;
+        transform-origin: center bottom 7.5vw;
+        transition: transform 1000ms cubic-bezier(.7,0,.23,1);
+        &--off{
+            margin: 0 auto;
+            color: white;
+            font-size: 30px;
+            text-align: center;
+            width: 300px;
+            height: 50%;
+            background-color: red;
+            transform: rotateX(0deg) translateZ(50px);
+        }
+        &--on{
+            margin: 0 auto;
+            color: white;
+            font-size: 50px;
+            text-align: center;
+            width: 300px;
+            height: 50%;
+            background-color: green;
+            transform: rotateX(90deg) translateZ(-50px);
+        }
+    }
+}*/
+
+/*$border-rad: 2rem;
+$clr-btn: #15DEA5;
+
+.btn{
+    border-radius: $border-rad;
+    background-color: $clr-btn;
+    height: 50px;
+    width: 200px;
+    color: white;
+    font-family: sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+    font-style: italic;
+    border: 0px;
+    position: relative;
+    z-index: 1;
+    &:hover{
+        &::after{
+            opacity: 1;
+        }
+    }
+    &::after{
+        content:"";
+        position: absolute;
+        border-radius: $border-rad;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        background-color: darken($clr-btn, 5);
+        opacity: 0;
+        z-index: -1;
+        transition: opacity 250ms;
+    }
+}*/
+
+$cd-bars: #15DEA5;
+$cd-bars-inv: #0E397F;
+$size: 3vh;
+$anim-dur: 1000ms;
+$num-bars: 5;
+$anim-delay: $anim-dur / $num-bars;
+
+.load{
+    width: $size*10;
+    height: $size*7.5;
+    display: flex;
+    justify-content: space-evenly;
+    &__bar{
+        background-color: $cd-bars;
+        height: 100%;
+        width: $size;
+        animation: bar $anim-dur alternate ease-in-out backwards infinite;
+        @for $i from 1 through $num-bars{
+            &--#{$i}{
+                animation-delay: $anim-delay*$i;
+            }
+            &--#{$i}-inv{
+                animation-delay: $anim-delay*$i;
+                animation-direction: alternate-reverse;
+                background-color: $cd-bars-inv;
+            }
+        }
+    }
+}
+
+@keyframes bar{
+    0%{
+        transform: scaleY(0.5);
+    }
+    100%{
+        transform: scaleY(1.0);
+    }
+}

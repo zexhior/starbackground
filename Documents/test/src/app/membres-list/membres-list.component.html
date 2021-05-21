@@ -1,0 +1,4 @@
+<p>membres-list works!</p>
+<div *ngFor="let membre of membres | async" style="width: 300px;">
+    <membres-details [membre]="membre"></membres-details>
+</div>
